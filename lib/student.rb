@@ -88,7 +88,7 @@ class Student
   end
   
   def self.first_X_students_in_grade_10(student_count)
-    student
+    first_x = student_count
     binding.pry
     sql = <<-SQL 
       SELECT *
