@@ -95,7 +95,7 @@ class Student
       WHERE grade = 10
     SQL
     
-    DB[:conn].execute(sql).student_count.times.collect do |row|
+    DB[:conn].execute(sql).collect do |row|
       self.new_from_db(row)
     end.first(first_x)
   end
