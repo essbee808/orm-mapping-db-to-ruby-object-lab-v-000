@@ -88,12 +88,12 @@ class Student
   end
   
   def self.first_x_students_in_grade_10(student_count)
+    binding.pry
     sql = <<-SQL 
       SELECT *
       FROM students
       WHERE grade = 10
     SQL
-    binding.pry
     # DB[:conn].execute(sql).student_count.times.map do |row|
     #   self.new_from_db(row)
     # end
