@@ -89,7 +89,6 @@ class Student
   
   def self.first_X_students_in_grade_10(student_count)
     first_x = student_count
-    binding.pry
     sql = <<-SQL 
       SELECT *
       FROM students
